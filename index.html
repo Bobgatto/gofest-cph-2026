@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO Fest 2026 Copenhagen</title>
+<link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+<style>
+:root{--bg:#080812;--s:rgba(15,15,28,.94);--s2:rgba(22,22,40,.94);--b:#282840;--t:#e8e8f2;--d:#70708c;--a:#e05028;--a2:#ff8040;--g:#e0a830;--p:#9b5de5;--pk:#e05080;--r:#d94444;--c:#3aa8a8;--rd:10px;--rl:18px;--f:'Cabinet Grotesk',-apple-system,sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--f);background:var(--bg);color:var(--t);line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:url('https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/pokemon-go-fest-copenhagen.jpg') center/cover no-repeat;opacity:.15;filter:brightness(.45)}
+::selection{background:var(--a);color:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(8,8,18,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+nav .logo{font-weight:900;font-size:17px;letter-spacing:-.4px;color:var(--a)}
+nav .links{display:flex;gap:18px}
+nav .links a{color:var(--d);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;text-decoration:none;transition:color .2s}
+nav .links a:hover{color:var(--t)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 24px 60px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,rgba(8,8,18,.9) 80%,var(--bg) 100%);z-index:0}
+.hc{position:relative;z-index:1;max-width:680px}
+.hb{display:inline-block;padding:5px 16px;border-radius:100px;border:1px solid rgba(224,80,40,.3);background:rgba(224,80,40,.06);color:var(--a);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:24px}
+.hero h1{font-size:clamp(44px,9vw,90px);font-weight:950;line-height:.94;letter-spacing:-2.5px;margin-bottom:10px}
+.hero h1 span{background:linear-gradient(135deg,var(--a),var(--a2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{color:var(--d);font-size:17px;font-weight:500;margin-bottom:32px}
+.countdown{display:flex;gap:12px;justify-content:center;margin-bottom:40px}
+.cd{background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:16px 20px;min-width:72px}
+.cd-n{font-size:36px;font-weight:950;line-height:1;background:linear-gradient(180deg,var(--a2),var(--a));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cd-l{font-size:9px;color:var(--d);text-transform:uppercase;letter-spacing:2px;margin-top:4px}
+.stabs{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
+.stab{padding:8px 20px;border-radius:100px;border:1px solid var(--b);background:var(--s);color:var(--d);font-family:var(--f);font-weight:700;font-size:12px;cursor:pointer;transition:all .2s}
+.stab.on{background:var(--a);border-color:var(--a);color:#fff}
+.sinfo{background:var(--s);border:1px solid var(--b);border-radius:var(--rl);padding:16px 24px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.si{text-align:center}.si-l{font-size:9px;color:var(--d);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:2px}.si-v{font-weight:800;font-size:15px}
+.btn{display:inline-block;margin-top:24px;padding:14px 36px;border-radius:100px;background:var(--a);color:#fff;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:-.2px;transition:all .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(224,80,40,.28)}
+section{padding:80px 24px;max-width:1080px;margin:0 auto}
+.sl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--a);margin-bottom:4px}
+h2{font-size:32px;font-weight:850;letter-spacing:-1px;margin-bottom:32px}
+h3{font-size:17px;font-weight:800;margin-bottom:10px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.g6{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.ga{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px}
+.card{background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:20px;transition:border-color .2s}
+.card:hover{border-color:var(--a)}.card .ci{font-size:20px;font-weight:700;margin-bottom:6px;color:var(--t)}.card .cl{font-size:9px;color:var(--d);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:2px}.card .cv{font-size:15px;font-weight:750}
+.spawn{background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:14px 8px;text-align:center;transition:all .15s;position:relative}
+.spawn:hover{transform:translateY(-2px);border-color:var(--a)}.spawn img{width:54px;height:54px;object-fit:contain;margin-bottom:4px}
+.spawn .sn{font-weight:700;font-size:11px}.spawn .st{font-size:9px;color:var(--d);margin-top:1px}
+.spawn .sb{position:absolute;top:6px;right:6px;width:16px;height:16px;background:var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#000}
+.spawn .nb{position:absolute;top:6px;right:6px;font-size:8px;background:var(--pk);color:#fff;padding:1px 6px;border-radius:100px;font-weight:700}
+.raid-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.rmon{background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:10px 14px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:13px}
+.rmon img{width:28px;height:28px;object-fit:contain}
+.rmon.pr{border-color:rgba(155,93,229,.4)}.rmon.sh{border-color:rgba(217,68,68,.4);color:var(--r)}
+.featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.fcard{background:var(--s);border:1px solid var(--b);border-radius:var(--rl);overflow:hidden;transition:transform .2s}
+.fcard:hover{transform:translateY(-3px)}.fcard img{width:100%;display:block}.fcard .fc{padding:14px 18px;font-size:12px;color:var(--d)}
+.bgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.bgc{background:var(--s);border:1px solid var(--b);border-radius:var(--rl);padding:24px;transition:border-color .2s}
+.bgc:hover{border-color:var(--a)}.bgc .bf{font-size:11px;color:var(--a);font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px}
+.bgc .bp{font-size:20px;font-weight:850;margin-bottom:4px}
+.bgc .bd{color:var(--d);font-size:12px;line-height:1.5}
+.bgv{margin-top:14px;height:180px;border-radius:8px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.bgv img.pokemon{width:80px;height:80px;object-fit:contain;filter:drop-shadow(0 4px 20px rgba(0,0,0,.7));z-index:2}
+.bgv .title{position:absolute;top:10px;left:0;right:0;text-align:center;font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;z-index:2}
+.bgv .loc{position:absolute;top:30px;left:0;right:0;text-align:center;font-size:7px;letter-spacing:2px;z-index:2}
+.bgv .skyline{position:absolute;bottom:55px;left:0;right:0;height:40px;display:flex;align-items:flex-end;justify-content:center;gap:3px;padding:0 30px;z-index:1}
+.bgv .skyline span{display:block;background:rgba(255,255,255,.06);border-radius:2px}
+.bgv .info{position:absolute;bottom:24px;left:0;right:0;text-align:center;z-index:2}
+.bgv .info .name{font-size:13px;font-weight:900;letter-spacing:1px}
+.bgv .info .cp{display:block;font-size:9px;margin-top:2px}
+.bgv .bar{position:absolute;bottom:0;left:0;right:0;height:4px;z-index:2}
+.mega-box{background:rgba(155,93,229,.04);border:1px solid rgba(155,93,229,.2);border-radius:var(--rl);padding:30px;text-align:center}
+.mega-box h3{font-size:20px;font-weight:850;margin-bottom:12px}.mega-pair{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px}
+.mega-pair img{width:100px;height:100px;object-fit:contain}
+.shiny-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.sh-card{background:var(--s);border:1px solid var(--b);border-radius:var(--rl);padding:22px;text-align:center;transition:border-color .2s}
+.sh-card:hover{border-color:var(--g)}.sh-card img{width:72px;height:72px;object-fit:contain;margin-bottom:10px}
+.sh-card .shn{font-size:15px;font-weight:800;margin-bottom:4px}
+.sh-card .shb{display:inline-block;padding:2px 10px;border-radius:100px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
+.shb.debut{background:rgba(224,80,128,.12);color:var(--pk)}.shb.avail{background:rgba(224,168,48,.12);color:var(--g)}
+.hls{display:flex;flex-direction:column;gap:12px}
+.hl{background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:20px 24px;display:flex;gap:16px;align-items:flex-start;transition:border-color .2s}
+.hl:hover{border-color:var(--a)}.hl .hli{font-size:14px;font-weight:800;flex-shrink:0;color:var(--a);min-width:60px}
+.hl h3{font-size:15px;font-weight:800;margin-bottom:3px}.hl p{color:var(--d);font-size:12px;line-height:1.5}
+.schedule{display:flex;flex-direction:column;gap:8px}
+.sr{display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--s);border:1px solid var(--b);border-radius:var(--rd)}
+.sr .st{font-weight:900;font-size:12px;color:var(--a);min-width:48px}
+.sr strong{font-size:13px}.sr span{color:var(--d);font-size:11px;display:block;margin-top:2px}
+.tip-hero{background:rgba(224,80,40,.06);border:2px solid var(--a);border-radius:var(--rl);padding:36px 40px;text-align:center;margin-top:24px}
+.tip-hero h3{font-size:24px;font-weight:900;margin-bottom:12px;color:var(--a)}
+.tip-hero p{color:var(--d);font-size:15px;line-height:1.6;max-width:620px;margin:0 auto}
+.th-detail{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.thd{text-align:center;padding:12px 20px;background:rgba(8,8,18,.5);border-radius:var(--rd)}
+.thd strong{display:block;font-size:18px;color:var(--t);margin-bottom:2px}
+.thd span{font-size:11px;color:var(--d)}
+.cfb{background:var(--s2);border:1px solid var(--b);border-radius:var(--rl);padding:28px;margin-top:32px;text-align:center}
+.cfb h3{font-size:20px;font-weight:850;margin-bottom:8px}
+.cfb p{color:var(--d);font-size:13px;margin-bottom:16px;max-width:500px;margin-left:auto;margin-right:auto}
+.cfb .cfg{display:inline-block;padding:10px 24px;background:var(--a);color:#fff;border-radius:100px;font-weight:800;font-size:15px;letter-spacing:-.2px}
+footer{text-align:center;padding:40px 24px;color:var(--d);font-size:11px;border-top:1px solid var(--b)}
+footer a{color:var(--a);text-decoration:none}
+@media(max-width:640px){nav .links{display:none}h2{font-size:26px}.hero h1{font-size:36px}section{padding:48px 16px}.g2{grid-template-columns:1fr}.spawn img{width:44px;height:44px}.featured{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">GO FEST CPH</div>
+  <div class="links"><a href="#info">Info</a><a href="#spawns">Spawns</a><a href="#raids">Raids</a><a href="#backgrounds">Backgrounds</a><a href="#shiny">Shiny</a><a href="#zones">Zones</a><a href="#highlights">CPH</a></div>
+</nav>
+
+<section class="hero">
+  <div class="hc">
+    <div class="hb">Team Valor · Candela</div>
+    <h1>GO Fest 2026<br><span>Copenhagen</span></h1>
+    <p class="sub">Faelledparken · June 12-14 · 200 DKK</p>
+    <div class="countdown" id="cd">
+      <div class="cd"><div class="cd-n" id="cd-d">14</div><div class="cd-l">Days</div></div>
+      <div class="cd"><div class="cd-n" id="cd-h">00</div><div class="cd-l">Hours</div></div>
+      <div class="cd"><div class="cd-n" id="cd-m">00</div><div class="cd-l">Min</div></div>
+      <div class="cd"><div class="cd-n" id="cd-s">00</div><div class="cd-l">Sec</div></div>
+    </div>
+    <div class="stabs">
+      <button class="stab on" onclick="sw('morning')">Morning 9:00-13:00</button>
+      <button class="stab" onclick="sw('afternoon')">Afternoon 15:00-19:00</button>
+    </div>
+    <div class="sinfo" id="sinfo">
+      <div class="si"><div class="si-l">Park Session</div><div class="si-v">9:00 - 13:00</div></div>
+      <div class="si"><div class="si-l">City Experience</div><div class="si-v">9:00 - 18:00</div></div>
+      <div class="si"><div class="si-l">Location</div><div class="si-v">Faelledparken, Copenhagen</div></div>
+    </div>
+    <a href="https://pokemongolive.com/gofest/copenhagen" target="_blank" class="btn">Buy Tickets - 200 DKK</a>
+  </div>
+</section>
+
+<section id="info">
+  <div class="sl">Overview</div><h2>Everything you need to know</h2>
+  <div class="g3">
+    <div class="card"><div class="ci">Faelledparken</div><div class="cl">Location</div><div class="cv">Copenhagen, Denmark</div></div>
+    <div class="card"><div class="ci">June 12-14</div><div class="cl">Dates</div><div class="cv">3 days, 2026</div></div>
+    <div class="card"><div class="ci">200 DKK</div><div class="cl">Price per day</div><div class="cv">Nonrefundable</div></div>
+    <div class="card"><div class="ci">9:00 - 13:00</div><div class="cl">Morning Park</div><div class="cv">4-hour session</div></div>
+    <div class="card"><div class="ci">15:00 - 19:00</div><div class="cl">Afternoon Park</div><div class="cv">4-hour session</div></div>
+    <div class="card"><div class="ci">9:00 - 18:00</div><div class="cl">City Experience</div><div class="cv">All-day gameplay</div></div>
+    <div class="card"><div class="ci">Candela</div><div class="cl">Team Leader</div><div class="cv">Team Valor</div></div>
+    <div class="card"><div class="ci">4 Districts</div><div class="cl">City Exploration</div><div class="cv">Trainer Challenges</div></div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="sl">Mythical Debut</div><h2>Zeraora - First time in Pokemon GO</h2>
+  <div class="g2">
+    <img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/zeraora.jpg" alt="Zeraora" style="width:100%;border-radius:var(--rl);border:1px solid var(--b)">
+    <div>
+      <p style="font-size:17px;font-weight:700;margin-bottom:10px;color:var(--a)">Special Research - included with your ticket</p>
+      <p style="color:var(--d);margin-bottom:14px;font-size:14px">Investigate the discovery of Zeraora, the Thunderclap Pokemon. A brand new Mythical Pokemon available only through GO Fest Special Research.</p>
+      <ul style="list-style:none;color:var(--d);font-size:12px">
+        <li style="padding:4px 0">One Zeraora encounter per trainer across all GO Fest events</li>
+        <li style="padding:4px 0">Extra Special Research lines reward Zeraora Candy instead</li>
+        <li style="padding:4px 0">Special Research does NOT expire</li>
+        <li style="padding:4px 0">Attending multiple cities? Only your first gives the encounter</li>
+      </ul>
+      <div style="margin-top:20px;background:var(--s);border:1px solid var(--b);border-radius:var(--rd);padding:16px">
+        <p style="font-weight:700;font-size:14px;margin-bottom:4px">Pokemon GO Expert Medal</p>
+        <p style="color:var(--d);font-size:12px">Complete 2 of 4 City District Trainer Challenges. Bonus encounter: choose Mega Mewtwo X or Y with Mega Level 1 unlocked.</p>
+        <p style="color:var(--d);font-size:11px;margin-top:6px">Active: June 11 00:00 - June 14 23:59</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mewtwo">
+  <div class="sl">Super Mega Raid</div><h2>Mega Mewtwo X & Y - Final 30 Minutes</h2>
+  <img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/mewtwo-raids.jpg" alt="Mega Mewtwo" style="width:100%;max-width:600px;display:block;margin:24px auto;border-radius:var(--rl);border:1px solid var(--b)">
+  <div class="mega-box">
+    <h3>Over 1,000 Trainers - one massive raid</h3>
+    <p style="color:var(--d);margin-bottom:16px">New Gyms appear in the final 30 minutes of your park session.</p>
+    <div class="mega-pair">
+      <div style="text-align:center"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt=""><p style="font-weight:800;font-size:13px;margin-top:4px">Mega Mewtwo X</p></div>
+      <div style="text-align:center"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt=""><p style="font-weight:800;font-size:13px;margin-top:4px">Mega Mewtwo Y</p></div>
+    </div>
+    <p style="color:var(--c);font-weight:700;font-size:14px">Fast: Counter · Charged: Psystrike</p>
+    <p style="color:var(--d);font-size:12px;margin-top:8px">GO Fest 2026 Location Background · Mega Level 1-3 unlocked · Ticket only for Counter + Psystrike</p>
+  </div>
+</section>
+
+<section>
+  <div class="sl">Featured Pokemon</div><h2>What you can encounter</h2>
+  <div class="featured">
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/costumed-pikachu.jpg" alt=""><div class="fc">Pikachu with Team Valor hat - exclusive to Copenhagen. Shiny possible.</div></div>
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/shiny-wash-rotom.jpg" alt=""><div class="fc">Shiny Wash Rotom - DEBUT. Available for the first time in Pokemon GO.</div></div>
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/paldean-tauros.jpg" alt=""><div class="fc">Combat Breed Paldean Tauros - 3-star raids. Shiny debut, ticket only.</div></div>
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/comfey.jpg" alt=""><div class="fc">Comfey - normally Hawaii-only. In Faelledparken and across Copenhagen.</div></div>
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/caterpie-with-hat.jpg" alt=""><div class="fc">Caterpie with Poke Ball hat - all three GO Fest events. Shiny possible.</div></div>
+    <div class="fcard"><img src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/merchandise.jpg" alt=""><div class="fc">GO Fest 2026 merchandise - preorder or buy at Faelledparken.</div></div>
+  </div>
+</section>
+
+<section id="spawns">
+  <div class="sl">Spawns</div><h2>Pokemon in Faelledparken</h2>
+  <p style="color:var(--d);font-size:12px;margin-bottom:18px">All spawns also appear in Copenhagen during City Gameplay. All Unown forms. S = Shiny possible. <span style="color:var(--pk)">NEW</span> = Shiny debut.</p>
+  <div class="g6">
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_004_00_14.png" alt=""><div class="sn">Charmander</div><div class="st">Pikachu visor</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm10.icon.png" alt=""><div class="sn">Caterpie</div><div class="st">Poke Ball hat</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_052_61.png" alt=""><div class="sn">A-Meowth</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_077_00.png" alt=""><div class="sn">Ponyta</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_105_61.png" alt=""><div class="sn">A-Marowak</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_123_00.png" alt=""><div class="sn">Scyther</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_136_00.png" alt=""><div class="sn">Flareon</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_201_16.png" alt=""><div class="sn">Unown</div><div class="st">All forms</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_299_00.png" alt=""><div class="sn">Nosepass</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_371_00.png" alt=""><div class="sn">Bagon</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm749.icon.png" alt=""><div class="sn">Mudbray</div></div>
+    <div class="spawn"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm764.icon.png" alt=""><div class="sn">Comfey</div><div class="st">From Hawaii</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm781.icon.png?v2" alt=""><div class="sn">Dhelmise</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm935.icon.png" alt=""><div class="sn">Charcadet</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm744.icon.png" alt=""><div class="sn">Rockruff</div><div class="st">Rare</div></div>
+    <div class="spawn"><span class="sb">S</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_025_00.png" alt=""><div class="sn">Pikachu</div><div class="st">Valor hat</div></div>
+    <div class="spawn"><span class="nb">NEW</span><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_479_13_shiny.png" alt=""><div class="sn">Wash Rotom</div><div class="st">SHINY DEBUT</div></div>
+  </div>
+</section>
+
+<section id="raids">
+  <div class="sl">Raids</div><h2>Raid Bosses in Copenhagen</h2>
+  <p style="color:var(--d);font-size:12px;margin-bottom:12px">9 free Raid Passes daily (18 with Raid Lover). No ticket = no Location Background, no Shiny Tauros.</p>
+  <h3 style="color:var(--d);text-transform:uppercase;font-size:12px;letter-spacing:1px;margin-top:20px">3-Star</h3>
+  <div class="raid-row"><div class="rmon"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm128.fPALDEA_COMBAT.icon.png" alt="">Combat Paldean Tauros</div></div>
+  <h3 style="color:var(--d);text-transform:uppercase;font-size:12px;letter-spacing:1px;margin-top:16px">5-Star</h3>
+  <div class="raid-row"><div class="rmon"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_146_00.png" alt="">Moltres</div><div class="rmon"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt="">Mewtwo</div><div class="rmon"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_244_00.png" alt="">Entei</div></div>
+  <h3 style="color:var(--d);text-transform:uppercase;font-size:12px;letter-spacing:1px;margin-top:16px">Primal</h3>
+  <div class="raid-row"><div class="rmon pr"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm382.fPRIMAL.icon.png" alt="">Primal Kyogre</div><div class="rmon pr"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm383.fPRIMAL.icon.png" alt="">Primal Groudon</div></div>
+  <h3 style="color:var(--d);text-transform:uppercase;font-size:12px;letter-spacing:1px;margin-top:16px">5-Star Shadow</h3>
+  <div class="raid-row"><div class="rmon sh"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_146_00.png" alt="">Shadow Moltres</div><div class="rmon sh"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_244_00.png" alt="">Shadow Entei</div><div class="rmon sh"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_382_00.png" alt="">Shadow Kyogre</div><div class="rmon sh"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_383_00.png" alt="">Shadow Groudon</div></div>
+</section>
+
+<section id="backgrounds">
+  <div class="sl">Exclusive</div><h2>Location & Special Backgrounds</h2>
+  <p style="color:var(--d);margin-bottom:24px;font-size:13px">Only ticket holders get these special catch backgrounds behind their Pokemon on the summary screen. Without a ticket: standard catches with no special background.</p>
+  <div class="bgs">
+    <div class="bgc">
+      <div class="bf">Super Mega Raid - Park</div><div class="bp">Mega Mewtwo X & Y</div>
+      <div class="bd">Only in the final 30 minutes. Faelledparken with GO Fest 2026 logo behind your Pokemon. Mega Level 1-3 unlocked.</div>
+      <div class="bgv" style="background:linear-gradient(135deg,#0a1a0f,#0d2416,#0f2e1a,#0a1a0f)">
+        <div class="title" style="color:rgba(255,255,255,.5)">Pokemon GO Fest 2026</div>
+        <div class="loc" style="color:rgba(255,255,255,.25)">FAELLEDPARKEN · COPENHAGEN</div>
+        <img class="pokemon" src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt="">
+        <div class="info"><span class="name">Mewtwo</span><span class="cp" style="color:rgba(255,255,255,.4)">CP 2387 · Location Background</span></div>
+        <div class="bar" style="background:linear-gradient(90deg,#e05028,#ff8040,#e05028)"></div>
+      </div>
+    </div>
+    <div class="bgc">
+      <div class="bf">City Raids - 5-Star & Primal</div><div class="bp">Mewtwo · Moltres · Entei · Kyogre · Groudon</div>
+      <div class="bd">Location Background when caught in Copenhagen. Includes Primal and Shadow raids. Copenhagen skyline silhouette behind the Pokemon.</div>
+      <div class="bgv" style="background:linear-gradient(180deg,#0a0a1a,#0d0d24,#12122a,#0a0a1a)">
+        <div class="title" style="color:rgba(255,255,255,.4)">Pokemon GO Fest 2026</div>
+        <div class="loc" style="color:rgba(255,255,255,.2)">COPENHAGEN · CITY RAID</div>
+        <div class="skyline"><span style="width:4px;height:12px"></span><span style="width:5px;height:22px"></span><span style="width:4px;height:30px"></span><span style="width:6px;height:18px"></span><span style="width:4px;height:35px"></span><span style="width:5px;height:15px"></span><span style="width:4px;height:26px"></span></div>
+        <img class="pokemon" src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt="">
+        <div class="info"><span class="name">Mewtwo</span><span class="cp" style="color:rgba(255,255,255,.4)">CP 2341 · Location Background</span></div>
+        <div class="bar" style="background:linear-gradient(90deg,#4d94ff,#9b5de5,#4d94ff)"></div>
+      </div>
+    </div>
+    <div class="bgc">
+      <div class="bf">Special Research</div><div class="bp">Zeraora</div>
+      <div class="bd">GO Fest 2026 Special Background from Special Research encounter. First Mythical Pokemon to feature a location background in the game.</div>
+      <div class="bgv" style="background:linear-gradient(135deg,#1a0d2a,#1f1035,#251540,#1a0d2a)">
+        <div class="title" style="color:rgba(200,170,50,.6)">Pokemon GO Fest 2026</div>
+        <div class="loc" style="color:rgba(200,170,50,.3)">SPECIAL RESEARCH · MYTHICAL</div>
+        <img class="pokemon" src="https://cdn.leekduck.com/assets/img/events/article-images/2026/2026-06-12-pokemon-go-fest-2026-copenhagen/zeraora.jpg" alt="" style="width:90px;height:90px">
+        <div class="info"><span class="name">Zeraora</span><span class="cp" style="color:rgba(200,170,50,.5)">CP 1923 · Special Background</span></div>
+        <div class="bar" style="background:linear-gradient(90deg,#c8aa32,#f0d060,#c8aa32)"></div>
+      </div>
+    </div>
+    <div class="bgc">
+      <div class="bf">City Experience Bonus</div><div class="bp">Mega Mewtwo X or Y (choice)</div>
+      <div class="bd">Complete 2+ City District Trainer Challenges. Choose X or Y form. Location Background and Mega Level 1 unlocked included.</div>
+      <div class="bgv" style="background:linear-gradient(180deg,#1a1208,#1f1a0d,#242012,#1a1208)">
+        <div class="title" style="color:rgba(255,255,255,.45)">Pokemon GO Fest 2026</div>
+        <div class="loc" style="color:rgba(255,255,255,.2)">COPENHAGEN · BONUS ENCOUNTER</div>
+        <div class="skyline"><span style="width:3px;height:10px"></span><span style="width:4px;height:18px"></span><span style="width:3px;height:24px"></span><span style="width:5px;height:14px"></span><span style="width:4px;height:20px"></span></div>
+        <img class="pokemon" src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt="">
+        <div class="info"><span class="name">Mewtwo</span><span class="cp" style="color:rgba(255,255,255,.35)">CP 2298 · Location Background</span></div>
+        <div class="bar" style="background:linear-gradient(90deg,#e05028,#ff8040,#e05028)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shiny">
+  <div class="sl">Shiny Pokemon</div><h2>What can be Shiny?</h2>
+  <p style="color:var(--d);margin-bottom:20px;font-size:12px">Ticket holders get increased Shiny rate (~1/64). All Faelledparken spawns can be Shiny (marked S above).</p>
+  <div class="shiny-grid">
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_479_13_shiny.png" alt=""><div class="shn">Wash Rotom</div><div class="shb debut">Shiny Debut</div></div>
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pm128.fPALDEA_COMBAT.s.icon.png" alt=""><div class="shn">Combat Tauros</div><div class="shb debut">Shiny Debut</div></div>
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_025_00.png" alt="" style="filter:hue-rotate(300deg) brightness(1.4)"><div class="shn">Pikachu (Valor)</div><div class="shb avail">CPH Exclusive</div></div>
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_150_00.png" alt=""><div class="shn">Mewtwo</div><div class="shb avail">Counter/Psystrike</div></div>
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_146_00.png" alt=""><div class="shn">Moltres</div><div class="shb avail">5-Star + Shadow</div></div>
+    <div class="sh-card"><img src="https://cdn.leekduck.com/assets/img/pokemon_icons/pokemon_icon_244_00.png" alt=""><div class="shn">Entei</div><div class="shb avail">5-Star + Shadow</div></div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="sl">Faelledparken</div><h2>Four Skill-Based Zones</h2>
+  <p style="color:var(--d);font-size:12px;margin-bottom:18px">New Timed Research every hour based on your zone location.</p>
+  <div class="g4">
+    <div class="card" style="padding:24px"><h3>Recruitment Zone</h3><p style="color:var(--d);font-size:12px">Team leaders showcase their teams. Raids, PvP Battle Ground. Meet Candela and other Valor players here.</p></div>
+    <div class="card" style="padding:24px"><h3>Conservatory Zone</h3><p style="color:var(--d);font-size:12px">The widest variety of Pokemon species. Rare spawns from your Pokedex. Best spot for rare Unown forms.</p></div>
+    <div class="card" style="padding:24px"><h3>Cultivation Zone</h3><p style="color:var(--d);font-size:12px">Field Research, special Eggs, boosted incubators. Start here for half-distance Eggs.</p></div>
+    <div class="card" style="padding:24px"><h3>Rocket Hideout</h3><p style="color:var(--d);font-size:12px">Team GO Rocket camp. Battle Grunts, Leaders, Giovanni. Shadow Raids. Reclaim GO Fest for Valor.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sl">Bonuses</div><h2>What your ticket gets you</h2>
+  <div class="ga">
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/freeraidpass.png" style="width:40px;height:40px" alt=""><div class="sn">9 Raid Passes</div><div class="st">Daily</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/trade.png" style="width:40px;height:40px" alt=""><div class="sn">6 Special Trades</div><div class="st">Daily</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/stardust2x.png" style="width:40px;height:40px" alt=""><div class="sn">1/2 Stardust</div><div class="st">All trades</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/eggdistance.png" style="width:40px;height:40px" alt=""><div class="sn">1/2 Hatch Dist</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/candy.png" style="width:40px;height:40px" alt=""><div class="sn">2x Catch Candy</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/friendgift.png" style="width:40px;height:40px" alt=""><div class="sn">50 Gifts/day</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/premierball.png" style="width:40px;height:40px" alt=""><div class="sn">Premier Ball+</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/lure.png" style="width:40px;height:40px" alt=""><div class="sn">2hr Lures</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/incense.png" style="width:40px;height:40px" alt=""><div class="sn">2hr Incense</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/egg.png" style="width:40px;height:40px" alt=""><div class="sn">Special Eggs</div></div>
+    <div class="spawn" style="padding:18px 12px"><img src="https://cdn.leekduck.com/assets/img/events/bonuses/pokestop.png" style="width:40px;height:40px" alt=""><div class="sn">Field Research</div><div class="st">Hourly</div></div>
+    <div class="spawn" style="padding:18px 12px;border-color:rgba(224,168,48,.35)"><img src="https://cdn.leekduck.com/assets/img/events/icons/shiny.png" style="width:40px;height:40px" alt=""><div class="sn" style="color:var(--g)">Boosted Shiny</div><div class="st">~1/64 rate</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sl">Schedule</div><h2>Your Event Timeline</h2>
+  <div class="schedule" id="sch-m">
+    <div class="sr"><div class="st">08:30</div><div><strong>Arrival</strong><span>Faelledparken entrance. Ticket and ID ready. Connect Bluetooth.</span></div></div>
+    <div class="sr"><div class="st">09:00</div><div><strong>Park Session</strong><span>Zeraora Special Research unlocks. 4 zones open. First Timed Research.</span></div></div>
+    <div class="sr"><div class="st">10:00</div><div><strong>New Timed Research</strong><span>New research every hour based on your zone. Switch zones for variety.</span></div></div>
+    <div class="sr"><div class="st">12:30</div><div><strong>SUPER MEGA RAID</strong><span>Final 30 min. Mega Mewtwo X and Y. Counter + Psystrike. Location Background.</span></div></div>
+    <div class="sr"><div class="st">13:00</div><div><strong>City Experience</strong><span>4 City Districts. Trainer Challenges. Expert Medal. Raids across Copenhagen.</span></div></div>
+    <div class="sr"><div class="st">18:00</div><div><strong>End</strong><span>City gameplay ends. Campfire after-events available.</span></div></div>
+  </div>
+  <div class="schedule" id="sch-a" style="display:none">
+    <div class="sr"><div class="st">09:00</div><div><strong>City Experience</strong><span>Explore 4 City Districts. Start Trainer Challenges.</span></div></div>
+    <div class="sr"><div class="st">14:30</div><div><strong>Head to Park</strong><span>Faelledparken entrance. Ticket, ID, Bluetooth ready.</span></div></div>
+    <div class="sr"><div class="st">15:00</div><div><strong>Park Session</strong><span>Zeraora Research. 4 zones. Timed Research every hour.</span></div></div>
+    <div class="sr"><div class="st">18:30</div><div><strong>SUPER MEGA RAID</strong><span>Final 30 min. Mega Mewtwo X and Y. Stay until the end.</span></div></div>
+    <div class="sr"><div class="st">19:00</div><div><strong>End</strong><span>Park and city gameplay conclude.</span></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sl">Add-ons</div><h2>Ticket Add-ons</h2>
+  <div class="g4">
+    <div class="card" style="padding:24px"><h3>Raid Lover</h3><ul style="list-style:none;color:var(--d);font-size:12px"><li>18 daily Raid Passes (+9)</li><li>Bonus XP and Candy</li></ul></div>
+    <div class="card" style="padding:24px"><h3>Egg-thusiast</h3><ul style="list-style:none;color:var(--d);font-size:12px"><li>1/4 Egg Hatch Distance</li><li>Higher 10km Egg chance</li></ul></div>
+    <div class="card" style="padding:24px"><h3>Citywide Gameplay</h3><ul style="list-style:none;color:var(--d);font-size:12px"><li>Extra days in Copenhagen</li><li>Same spawns and raids</li></ul></div>
+    <div class="card" style="padding:24px"><h3>Premier Access</h3><ul style="list-style:none;color:var(--d);font-size:12px"><li>100 Premium Battle Passes</li><li>100 Super Incubators</li><li>Exclusive lounge (first in Europe)</li></ul></div>
+  </div>
+  <p style="margin-top:14px;padding:12px 18px;background:var(--s);border:1px solid var(--b);border-radius:var(--rd);color:var(--d);font-size:11px">New: <strong style="color:var(--t)">City Explorer Pass</strong> - city access without park ticket. June 11-14.</p>
+</section>
+
+<section id="highlights">
+  <div class="sl">Copenhagen</div><h2>Unique Experiences</h2>
+  <div class="hls">
+    <div class="hl"><div class="hli">LEGO</div><div><h3>LEGO Play Zone</h3><p>Official LEGO x Pokemon GO collaboration. Hands-on building, exclusive displays. LEGO Store Copenhagen and Tivoli Gardens feature event Pokestops with giveaways.</p></div></div>
+    <div class="hl"><div class="hli">RALLY</div><div><h3>LEGO Stamp Rally</h3><p>Digital scavenger hunt across Copenhagen. Visit designated Pokestops, collect stamps, earn an exclusive in-game reward and event stickers.</p></div></div>
+    <div class="hl"><div class="hli">LOUNGE</div><div><h3>Premier Access Lounge</h3><p>First time in Europe. Separate lounge with lockers, upgraded restrooms, charging kiosks. Requires Premier Access add-on.</p></div></div>
+    <div class="hl"><div class="hli">TRUCK</div><div><h3>Pokemon GO Truck</h3><p>The iconic truck rolls through Copenhagen. Follow it across City Districts. Check Campfire for locations.</p></div></div>
+    <div class="hl"><div class="hli">MERCH</div><div><h3>Park Merchandise</h3><p>Pokemon Center pop-up in Faelledparken. Preorder recommended. Bring 2D code from email or app under In-Person Tickets.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sl">Campfire</div><h2>Community Hub</h2>
+  <div class="cfb">
+    <h3>Copenhagen Downtown</h3>
+    <p>Join the official Campfire group for GO Fest 2026 Copenhagen. Coordinate raids, find Community Ambassador meetups, get spawn alerts, and connect with other trainers.</p>
+    <div class="cfg">Copenhagen Downtown on Campfire</div>
+    <p style="color:var(--d);font-size:11px;margin-top:12px">Download Niantic Campfire and search "Copenhagen Downtown" to join</p>
+  </div>
+  <div class="tip-hero">
+    <h3>The only tip that matters</h3>
+    <p>Stay for the final 30 minutes of your park session. That is when the Super Mega Raid happens. Mega Mewtwo X and Y with Counter + Psystrike, GO Fest 2026 Location Background, and Mega Level unlocked. Nothing else you do that day matters as much as this. Everything else - the spawns, the raids, the research - you can do during City Experience too. But the Super Mega Raid with Location Background Mewtwo only happens in those 30 minutes inside Faelledparken.</p>
+    <div class="th-detail">
+      <div class="thd"><strong>Counter</strong><span>Fast Attack</span></div>
+      <div class="thd"><strong>Psystrike</strong><span>Charged Attack</span></div>
+      <div class="thd"><strong>Location BG</strong><span>GO Fest 2026</span></div>
+      <div class="thd"><strong>Mega Unlocked</strong><span>Level 1-3</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Data from <a href="https://pokemongolive.com">pokemongolive.com</a> and <a href="https://leekduck.com">LeekDuck</a>. Pokemon sprites from LeekDuck CDN.</p>
+  <p style="margin-top:4px">Last updated May 28, 2026 · Pokemon GO &copy; Niantic / Nintendo / Creatures / GAME FREAK</p>
+</footer>
+
+<script>
+const T=new Date('2026-06-12T09:00:00+02:00').getTime();
+setInterval(()=>{const d=T-Date.now();if(d<=0)return;document.getElementById('cd-d').textContent=Math.floor(d/864e5);document.getElementById('cd-h').textContent=Math.floor((d%864e5)/36e5);document.getElementById('cd-m').textContent=Math.floor((d%36e5)/6e4);document.getElementById('cd-s').textContent=Math.floor((d%6e4)/1e3)},1000);
+function sw(s){document.querySelectorAll('.stab').forEach(t=>t.classList.toggle('on',t.textContent.toLowerCase().includes(s==='morning'?'morning':'afternoon')));document.getElementById('sinfo').innerHTML=s==='morning'?'<div class="si"><div class="si-l">Park Session</div><div class="si-v">9:00 - 13:00</div></div><div class="si"><div class="si-l">City Experience</div><div class="si-v">9:00 - 18:00</div></div><div class="si"><div class="si-l">Location</div><div class="si-v">Faelledparken, Copenhagen</div></div>':'<div class="si"><div class="si-l">City Experience</div><div class="si-v">9:00 - 18:00</div></div><div class="si"><div class="si-l">Park Session</div><div class="si-v">15:00 - 19:00</div></div><div class="si"><div class="si-l">Location</div><div class="si-v">Faelledparken, Copenhagen</div></div>';document.getElementById('sch-m').style.display=s==='morning'?'':'none';document.getElementById('sch-a').style.display=s==='morning'?'none':''}
+</script>
+</body>
+</html>
